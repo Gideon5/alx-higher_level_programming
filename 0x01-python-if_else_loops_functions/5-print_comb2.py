@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for number in range(0, 100):
-    for number in range(0, 100):
-        print("{}".format(number))
-    else:
-        print("{:02}".format(number), end=", ")
+for i in range(99):
+    print("{:02d}".format(i), end=", ")
+else:
+    print("{:02d}".format(i + 1))
+
