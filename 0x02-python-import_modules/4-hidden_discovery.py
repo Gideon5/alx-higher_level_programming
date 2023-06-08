@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 import hidden_4
 
+
 def printNames():
     for i in dir(hidden_4):
-        if not (i[0] == '_' and i[1] == '_'):
+        if not (i.startswith('__')):
             print(i)
+
 
 if __name__ == "__main__":
     printNames()
