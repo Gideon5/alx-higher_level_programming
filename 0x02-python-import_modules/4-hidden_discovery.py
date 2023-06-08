@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 import hidden_4
 
-names = [name for name in dir(hidden_4) if not name.startswith('__')]
-names.sort()
+def printNames():
+    for i in dir(hidden_4):
+        if not (i[0] = '_' and i[1] = '_'):
+            print(i)
 
-for name in names:
-    print(name)
+if __name__ == "__main__":
+    printNames()
