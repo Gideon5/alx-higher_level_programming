@@ -1,4 +1,5 @@
 #!/usr/bin/node
-
-const myVar = 'C is fun\nPython is cool\nJavaScript is amazing';
-console.log(myVar);
+const strings = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+for (const string of strings) {
+  console.log(string);
+}
